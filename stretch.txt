@@ -1,0 +1,14 @@
+1. What does merge conflict mean?
+It's when there is two commits for the same line that differ.
+
+Github has a tool to facilitate resolving these conflicts and the process is described here:
+https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-on-github
+
+2. What is git pull?
+Git pull will bring in remote changes to your local repo on the same branch, but this can create merge conflicts if you have pending changes local on files that were updated on the remote repo already.
+
+Rebase will make it as if pending commits started relative to a later branch as opposed to the state of the branch that the commits were made to initially.
+This could be advantageous in avoiding merge conflicts etc that would become irrelevant if you are fine with the interim changes that were made to the remote branch.
+
+Merge is mosly used to combine a series of commits and then merge one branch with another.
+
